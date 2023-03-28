@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>싸이월드</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/index.js"></script>
+    
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!--헤더영역 -->
+        <header>
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="image/mainlogo.PNG" alt="cyworld">
+                </a>
+            </h1>
+            <section class="search">
+                <h2 class="hidden">검색</h2>
+                <form action="search.jsp" method="get" id="serachForm" name="serachForm">
+                    <fieldset>
+                        <legend >검색 폼</legend>
+                        <label for="keyword"></label>
+                        <input type="search" id="keyword" name="keyword" placeholder="검색어를 입력하세요" required>
+                        <button type="submit">검색</button>
+                    </fieldset>
+                </form>
+            </section>
+            <ul class="infoLink">
+                <li><a href="#">홈</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">ENGLISH</a></li>
+            </ul>
+            <nav>
+                <h2 class="hidden">메인메뉴</h2>
+                <ul class="mainMenu">
+                    <li><a href="minihome.html">미니홈피</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">일촌목록</a></li>
+                    <li><a href="#">게시글</a></li>
+                    <li><a href="#">선물가게</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--메뉴 영역-->
+        <div id="mainArea">
+            <!--로그인 영역-->
+            <div id="loginArea">
+                <h2 class="hidden">로그인</h2>
+                <form action="login.jsp" method="post" id="loginForm" name="loginForm">
+                    <fieldset>
+                        <legend class="hidden">회원 로그인 폼</legend>
+                        <p>
+                            <label for="userId">💬아이디</label>
+                            <input type="text" id="userId" name="userId" required>
+                        </p>
+                        <p>
+                            <label for="userPw">💬비밀번호</label>
+                            <input type="password" id="userPw" name="userPw" required>
+                        </p>
+                        <p>
+                            <a href="join.html">회원가입</a>
+                        </p>
+                        <p>
+                           <a href="#">아이디 찾기/비밀번호 찾기</a> 
+                        </p>
+                        <button type="submit">로그인</button>
+                    </fieldset>
+                </form>
+            </div>
+            <!--동영상 영역-->
+            <div id="video">
+                <video autoplay controls loop muted >
+                    <source src="media/intro.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!--공지사항 영역-->
+            <div class="update">
+                <h3>UPDATE</h3>
+                <hr>
+                <ul>
+                    <li><a href="https://www.instagram.com/p/CoTTwaaSTRR/">💕BGM 선물 이벤트💕</a><time datetime="2022-12-13">2022.12.13</time></li>
+                    <li><a href="https://www.instagram.com/p/CpL2rJoP3PR/">타임머신 타고 어디로?!</a><time datetime="2022-11-27">2022.11.27</time></li>
+                    <li><a href="https://www.instagram.com/p/CoLviMBvLTA/">미니미 이벤트!</a><time datetime="2022-11-12">2022.11.12</time></li>
+                    <li><a href="#">싸이월드 리뉴얼 홈페이지 안내</a><time datetime="2022-10-04">2022.10.04</time></li>
+                </ul>
+            </div>
+            <!--이벤트 사진 영역-->
+            <div id="miniArea">
+                <img src="image/photo1.PNG" alt="#" class="img">
+                <img src="image/photo2.PNG" alt="#" class="img">
+                <img src="image/photo3.PNG" alt="#" class="img">
+                <img src="image/photo4.PNG" alt="#" class="img" >
+                <button class="prevbtn">&lt;</button>
+                <button class="nextbtn">&gt;</button>
+            </div>
+            <!--선물가게 영역-->
+            <div id="giftshop">
+                <h2>Gift Shop</h2>
+                <hr>
+                <div class="product">
+                    <img src="image/경민.jpg" alt="#">
+                    <p><a href="#">8TURN 경민</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+                <div class="product">
+                    <img src="image/명호.jpg" alt="#">
+                    <p><a href="#">8TURN 명호</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+                <div class="product">
+                    <img src="image/민호.jpg" alt="#">
+                    <p><a href="#">8TURN 민호</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+                <div class="product">
+                    <img src="image/승헌.jpg" alt="#">
+                    <p><a href="#">8TURN 승헌</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+                <div class="product">
+                    <img src="image/쥬리.jpg" alt="#">
+                    <p><a href="#">로켓펀치 쥬리</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+                <br>
+                <div class="product">
+                    <img src="image/윤규.jpg" alt="#">
+                    <p><a href="#">8TURN 윤규</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+                <div class="product">
+                    <img src="image/윤성.jpg" alt="#">
+                    <p><a href="#">8TURN 윤성</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+                <div class="product">
+                    <img src="image/재윤.jpg" alt="#">
+                    <p><a href="#">8TURN 재윤</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+                <div class="product">
+                    <img src="image/해민.jpg" alt="#">
+                    <p><a href="#">8TURN 해민</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+                <div class="product">
+                    <img src="image/연희.jpg" alt="#">
+                    <p><a href="#">로켓펀치 연희</a></p><br>
+                    <p>🍋 30</p>
+                </div>
+            </div>
+        </div>
+        <!--푸터 영역-->
+        <footer id="footer">
+            <div id="footerInner">
+                <section class="guide">
+                    <h2 class="hidden">사이트 이용안내</h2>
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">청소년 보호정책</a></li>
+                        <li><a href="#">서비스 제휴 제안</a></li>
+                    </ul>
+                </section>
+                <div class="footer1">
+                    <p class="footerName">(주) 싸이월드제트 (cyworld Z Co., Ltd.)</p>
+                    <p class="footerContent">대표자 : 김태훈, 손성민</p>
+                    <p class="footerContent">사업자등록 번호 : 313-81-33895 | 통신판매업신고 : 제 2021 서울강남 04925호</p>
+                    <p class="footerContent">주소 : 서울특별시 강남구 논현로 158길 29-1 (신사동) <br> E-mail : help@cyworld.com
+                        © cyworld Z Corp. All rights reserved.</p>
+                </div>
+                <div class="footer2">
+                    <p class="footerName">분쟁처리안내</p>
+                    <p class="footerContent">1670-4242</p>
+                    <p class="footerContent">E-MAIL: help@cyworld.com</p>
+                    <p class="footerContent">AM 10:00 ~ PM 18:00(주말 및 공휴일 휴무)</p>
+                    <p class="footerContent">BREAK TIME: 12:00 ~ 13:00</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

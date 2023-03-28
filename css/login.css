@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+#login{
+    margin-top: 30px;
+    margin: 30px auto;
+    width: 700px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+#login img{
+    width: 250px;
+    margin: 50px 250px 40px 210px; 
+}
+p label{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+p input {
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+}
+p{  margin-top: 30px;
+    margin-left: 200px;
+}
+input{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.loginPw,.loginId{
+    position: relative;
+    left: 120px;
+}
+.loginSmall{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.loginSmall1{
+    margin-left: 200px;
+}
+input#keyword{
+    width: 300px;
+    padding: 7px;
+    border-radius: 15px;
+}
+.search button{
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px 10px;
+    background: linear-gradient(to bottom , #9c9da1 0% , #666 30% , #4e4f56 100%);
+    border: 1px solid #949494;
+    font-weight: bold;
+    cursor: pointer;
+}
+#loginbtn{
+    border-radius: 10px;
+    border-color:rgb(233, 96, 32) ;
+    background-color: rgb(233, 96, 32);
+    color: yellow;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 40px;
+}
+

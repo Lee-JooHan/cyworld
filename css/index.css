@@ -1,0 +1,161 @@
+@charset "utf-8";
+input#keyword{
+    width: 300px;
+    padding: 7px;
+    border-radius: 15px;
+}
+.search button{
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px 10px;
+    background: linear-gradient(to bottom , #9c9da1 0% , #666 30% , #4e4f56 100%);
+    border: 1px solid #949494;
+    font-weight: bold;
+    cursor: pointer;
+}
+#loginArea form{
+
+    position: absolute;
+    left: 50px;
+ }
+#loginForm {
+    border: 2px solid rgb(233, 96, 32);
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+#loginForm p {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 5px;
+    z-index: 20;
+}
+#userId{
+    margin-left: 14px;
+}
+#loginForm p:nth-of-type(3),#loginForm p:nth-of-type(4){
+    display: inline-block;
+    position: relative;
+    right: -5px;
+    top: 3px; 
+}
+#loginForm p:nth-of-type(3)::after{
+    content: " | ";
+}
+#loginForm button{
+    position: absolute;
+    right: 15px;
+    bottom: 6px;
+    border-radius: 10px;
+    border-color:rgb(233, 96, 32) ;
+    background-color: rgb(233, 96, 32);
+    color: yellow;
+    cursor: pointer;
+    z-index: 20;
+}
+#video{
+    z-index: 100;
+    width: 400px;
+    height: 350px;
+}
+#video video{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 140px;
+    cursor: pointer;
+}
+.update {
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 450px;
+    width: 400px;
+    padding: 5px;
+    left: 20px;
+}
+.update time {
+    float: right;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+#miniArea{
+    position: relative;
+    top: -220px;
+    left: 200px;
+    height: 354px;
+    width: 457px;
+    border: 2px solid rgb(233, 96, 32);
+    border-radius: 12px;
+    background-color: #fff;
+ }
+ #miniArea img{
+   width: 450px;
+   height: 350px;
+   position: absolute;
+   margin: 0 auto;
+   border: 2px solid rgb(233, 96, 32);
+   border-radius: 10px;
+ }
+ .prevbtn,.nextbtn{
+    padding: 2px 5px;
+    position: absolute;
+    top: 328px;
+    background-color: #fff;
+    color: rgb(233, 96, 32);
+    border: rgb(233, 96, 32) 1px solid;
+    border-radius: 5px;
+    z-index: 100;
+    cursor: pointer;
+    font-weight: bold;
+ }
+ .prevbtn:hover,.nextbtn:hover{
+    color: #fff;
+    background-color: rgb(233, 96, 32);
+ }
+ .prevbtn:active,.nextbtn:active{
+    background-color: #fff;
+    color: rgb(233, 96, 32);
+ }
+ .nextbtn{
+    right: 0;
+ }
+ #giftshop{
+    background-color: #fff;
+    width: 1018px;
+    z-index: 20;
+    position: relative;
+    right: 27px;
+    bottom:160px;
+    border-radius: 10px;
+ }
+ #giftshop h2{
+    font-weight: bold;
+    margin-left: 20px;
+ }
+ .product{
+    margin-top: 7px;
+    flex-direction: row;
+    width: 150px;
+    display: inline-block;
+    margin-left: 40px;
+    text-align: center;
+ }
+ .product img{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 125px;
+    height: 125px;
+ }
+ .product img:hover{
+    cursor: pointer;
+ }
+ .product p {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 4px;
+ }

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미니홈피</title>
+    <link rel="stylesheet" href="css/minihome.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/minihome.js"></script>
+</head>
+<body>
+    <div id="bg">
+        <div id="bgborder">
+            <!--내용 영역-->
+            <div id="contentArea">
+                <!--왼쪽 파트 영역-->
+                <div id="leftArea">
+                    <div id="left1">
+                        <p>
+                            TODAY <span>30</span>| <span>TOTAL 30540</span> 
+                        </p>
+                    </div>
+                    <div id="left2">
+                        <img src="image/profile.PNG" alt="profile">
+                        <img src="image/minimi.jpg" alt="minimi">
+                        <p class="today">TODAY IS... <span>💕💕</span> </p><br>
+                        <div id="name">
+                            <p>싸이월드</p>
+                            <section class="one">
+                                <div id="wave">
+                                    <p class="typing">싸이월드가 리뉴얼 되어 다시 돌아왔습니다!</p>
+                                    <p><a href="index.html">메인 페이지로</a></p>
+                                    <select name="wavebtn">
+                                            <option class="wavewave">🌊파도타기🌊</option>
+                                            <option value="페이스북">페이스북</option>
+                                            <option value="카카오톡">카카오톡</option>
+                                            <option value="인스타그램">인스타그램</option>
+                                    </select>              
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <!--오른쪽 영역-->
+                <div id="rightArea">
+                    <div id="right1">
+                        <h2>싸이월드 ver 2.2</h2>
+                        <hr>
+                    </div>
+                    <div id="right2">
+                        <!--홈 메뉴-->
+                        <section id="home" >
+                            <h2><a href="#home" onclick="home();" >홈</a></h2>
+                            <div class="homecon">
+                                <div class="update">
+                                    <h3>UPDATE</h3>
+                                    <hr>
+                                    <ul>
+                                        <li><a href="https://www.instagram.com/p/CoTTwaaSTRR/">💕BGM 선물 이벤트💕</a><time datetime="2022-12-13">2022.12.13</time></li>
+                                        <li><a href="https://www.instagram.com/p/CpL2rJoP3PR/">타임머신 타고 어디로?!</a><time datetime="2022-11-27">2022.11.27</time></li>
+                                        <li><a href="https://www.instagram.com/p/CoLviMBvLTA/">미니미 이벤트!</a><time datetime="2022-11-12">2022.11.12</time></li>
+                                        <li><a href="">싸이월드 리뉴얼 홈페이지 안내</a><time datetime="2022-10-04">2022.10.04</time></li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="miniroom">
+                                    <h3>MINI ROOM</h3>
+                                    <hr>
+                                    <img src="image/miniroom.PNG" alt="miniroom">
+                                </div>
+                            </div>
+                        </section>
+                        <!--포토 메뉴-->
+                        <section id="photo">
+                            <h2><a href="#photo" onclick="photo();">사진첩</a></h2>
+                            <div class="photocon">
+                                <p>사진첩</p>
+                                <div class="photo4">
+                                    <h4>no.4 Samsung Card X cyword</h4>
+                                    <a href="https://www.instagram.com/p/CoLviMBvLTA/"><img src="image/photo4.PNG" alt="event"></a>
+                                </div>
+                                <div class="photo1">
+                                    <h4>no.3 타임머신 타고 어디로?!</h4>
+                                    <a href="https://www.instagram.com/p/CpL2rJoP3PR/"><img src="image/photo1.PNG" alt="event"></a>
+                                    
+                                </div>
+                                <div class="photo2">
+                                    <h4>no.2 💕BGM 선물 이벤트💕</h4>
+                                    <a href="https://www.instagram.com/p/CoTTwaaSTRR/"><img src="image/photo2.PNG" alt="event"></a>
+                                    
+                                </div>
+                                <div class="photo3">
+                                    <h4>no.1 미니미 이벤트!</h4>
+                                    <a href="https://www.instagram.com/p/CoLviMBvLTA/"><img src="image/photo3.PNG" alt="event"></a>
+                                </div>
+                            </div>
+                        </section>
+                        <!--게시판 영역-->
+                        <section id="board">
+                            <h2><a href="#board" onclick="board();">게시판</a></h2>
+                            <div class="boardcon">
+                                <p>게시판</p>
+                                <div class="boardIndex">
+                                    <ul>
+                                        <li class="radio"><input type="checkbox" ></li>
+                                        <li class="boardTitle"> 제목</li>
+                                        <li class="boardWriter">작성자</li>
+                                        <li class="boardDate">작성일</li>
+                                    </ul>                            
+                                </div>
+                                <div class="boardContent">
+                                    <ul>
+                                        <li class="radioli"><input type="checkbox" id="radio"></li>
+                                        <li class="boardTitle"> 싸이월드 리뉴얼 홈페이지 안내</li>
+                                        <li class="boardWriter">싸이월드</li>
+                                        <li class="boardDate">2022.10.04</li>
+                                    </ul>
+                                </div>
+                                <div class="boardBtn">
+                                    <button class="btnDelete">삭제</button>
+                                    <button class="btnWrite">🖋글쓰기</button>
+                                </div>
+                                <div class="boardSearch">
+                                    <input type="text" name="boardSearchBox" id="boardSearchBox" placeholder="검색어를 입력하세요">
+                                    <button class="boardSearchBtn">검색</button>
+                                </div>
+                            </div>
+                        </section>
+                        <!--방명록 영역-->
+                        <section id="visit">
+                            <h2><a href="#visit" onclick="visit();">방명록</a></h2>
+                            <div class="visitcon">
+                                <p>방명록</p>
+                                <div class="guest">
+                                    <h5>no.</h5>
+                                    <div class="guestText">
+                                        <img src="image/minimi.jpg" alt="미니미">
+                                        <p class="inputtext"></p>
+                                        <textarea cols="32" rows="5" maxlength="150" required class="textarea"></textarea>
+                                        <button type="submit" class="guestsubmit">등록</button>
+                                    </div>
+                                </div>
+                                <div class="temper"></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!--기타 영역-->
+                <div id="other">
+                    <div id="color">
+                        <span>배경 변경</span>
+                        <div class="colorEx colorEx1"></div>
+                        <div class="colorEx colorEx2"></div>
+                        <div class="colorEx colorEx3"></div>
+                        
+                    </div>
+                    <div id="bgm">
+                        <div class= changebtn>
+                            <img class="leftbtn" src="image/left.png" alt="leftbtn">
+                            <img class="rightbtn" src="image/right.png" alt="rightbtn">
+                        </div>
+                    </div>
+                    <h3>선물가게/BGM</h3>
+                    <div id="albumCanvas">
+                        <div class="album">
+                                <img src="image/lovelovelove.jpg" alt="lovelovelove">
+                                <img src="image/남자를몰라.jpg" alt="남자를몰라">
+                                <img src="image/프리스타일y.jpg" alt="y">
+                                <img src="image/밤하늘의별을.jpg" alt="밤하늘의 별을">
+                                <img src="image/미친사랑의노래.jpg" alt="미친사랑의노래">
+                                <img src="image/너에게쓰는편지.jpg" alt="너에게쓰는편지">
+                        </div>
+                        <div class="albumName">
+                            <div class="singer">
+                                <p>Love Love Love</p><br>
+                                <p>Epik High</p>
+                            </div>
+                            <div class="singer">
+                                <p>남자를 몰라</p><br>
+                                <p>Buzz</p>
+                            </div>
+                            <div class="singer">
+                                <p>Y</p><br>
+                                <p>프리스타일</p>
+                            </div>
+                            <div class="singer">
+                                <p>밤하늘의 별을..</p><br>
+                                <p>양정승</p>
+                            </div>
+                            <div class="singer">
+                                <p>미친 사랑의 노래</p><br>
+                                <p>씨야</p>
+                            </div>
+                            <div class="singer">
+                                <p>너에게 쓰는 편지</p><br>
+                                <p>MC 몽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer">&copy; 2023 cyworld</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
